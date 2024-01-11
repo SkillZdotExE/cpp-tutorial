@@ -1,5 +1,7 @@
 Ein kleines C++ Tutorial für die 5AHEL.
 
+Zum herunterladen drücke oben auf den grünen `<> Code`-Knopf und dann auf `Download ZIP`. 
+
 # Vorbereitung
 
 Du brauchst:
