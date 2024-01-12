@@ -1,6 +1,6 @@
 Ein kleines C++ Tutorial für die 5AHEL.
 
-Zum herunterladen drücke oben auf den grünen `<> Code`-Knopf und dann auf `Download ZIP`. 
+Zum herunterladen drücke oben auf den grünen `<> Code`-Knopf und dann auf `Download ZIP`. Speichere diesen Ordner an einem passenden Ort. (Desktop von mir aus, bitte nicht im Download-Ordner.) 
 
 Lies dir dann unten **Vorbereitung** und **Kompilieren von Programmen** durch. 
 
@@ -12,13 +12,25 @@ Du brauchst:
 
 Zu finden [hier](https://code.visualstudio.com/download).
 
-Ich empfehle, die Extensions für C/C++ zu installieren. (In VS Code `strg + shift + x` drücken und dann C++ suchen.)
+Ich empfehle, die Extensions für C/C++ zu installieren. (In VS Code `strg + shift + x` drücken und dann C++ suchen und installieren.)
 
 ## Einen C++-Compiler (am besten [gcc](https://gcc.gnu.org/))
 
 ### Automatische Installation
 
-Öffne die PowerShell, und führe `.\install.ps1` aus und starte danach VS Code neu. Diese Skript überprüft deine g++ Installation, und installiert MinGW, falls es nicht installiert ist.
+Öffne die PowerShell als Administrator und führe diesen Befehl aus:
+
+    set-executionpolicy remotesigned
+
+Wechsel in den heruntergeladenen Ordner mit `cd`:
+
+    cd C:\pfad\zum\ordner\cpp-tutorial-main
+
+Dann führe mein Installation-Skript aus mit
+
+    .\install.ps1
+
+Starte danach VS Code neu. Diese Skript überprüft deine g++ Installation, und installiert MinGW, falls es nicht installiert ist.
 
 ### Manuelle Installation
 
