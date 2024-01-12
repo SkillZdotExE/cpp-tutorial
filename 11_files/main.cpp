@@ -15,7 +15,7 @@
 // Merke dir, wie dieser Fehler in etwa ausschaut. Bekommst du beim kompilieren so einen Fehler,
 //  hast du höchstwahrscheinlich vergessen, einen .cpp file zu kompilieren, dessen Header du benutzt.
 
-// TODO: Implementiere die Klasse Rectangle mit Header und Source file. Sie soll mindestens einen Member und eine Methode haben.
+// TODO: Implementiere eine Klasse Rectangle mit Header und Source file. Sie soll mindestens einen Member und eine Methode haben.
 //       Inkludiere den Headerfile und teste alle Funktionen der Klasse im main.
 
 int main(void)
