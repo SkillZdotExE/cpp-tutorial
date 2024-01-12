@@ -2,8 +2,6 @@
 
 int main(void)
 {
-    // IF, ELSE, und SWITCH-CASE
-
     int i = 0;
 
     std::cout << "Enter an integer: ";
@@ -11,14 +9,14 @@ int main(void)
 
     // Das sind if-, else-if- und else-Statements.
     // Wenn die Bedingung wahr ist, wird der Code in ihr ausgeführt
-    // Wenn sie falsch ist, wird die nächste Bedingung evaluiert.
+    // Wenn sie falsch ist, wird die nächste Bedingung ausgewertet.
     if (i < 100)
     {
         std::cout << "The number is smaller than 100";
     }
     else if (i < 1000)
     {
-        std::cout << "The number is smaller than 1000";
+        std::cout << "The number is greater or equal to 100 and smaller than 1000";
     }
     else
     {
@@ -56,8 +54,6 @@ int main(void)
     }
     std::cout << '\n';
 
-    // SCHLEIFEN
-
     // Das ist eine while-Schleife.
     // Der Code in ihr wird immer wieder ausgeführt, solange die Bedingung (i < 5) wahr ist.
     int i1 = 0;
@@ -68,7 +64,14 @@ int main(void)
     }
 
     // Das ist eine for-Schleife.
-    // Sie hat die genau gleiche Funktion, wie der Code bei der while Schleife.
+    // Sie hat die genau gleiche Funktion, wie der Code der while Schleife.
+    // Sie hat folgendes Format:
+    //      for (<Initialisierung>, <Bedingung>, <Update>)
+    //  Die Initialisierung wird EINMAL ausgeführt bevor die Schleife beginnt
+    //  Die Bedingung wird VOR jeder Iteration der Schleife geprüft. Wenn sie false ist, bricht die Schleife ab.
+    //  Update wird NACH jeder Schleife ausgeführt.
+    //      Hier wird eine Variable meistens mit increment- und decrement-Operatoren (++ und --) um eins erhöht oder verringert.
+    //      Will man die Variable nicht um eins verändern, kann man += und -= verwenden (z.B. "i += 2;")
     for (int i2 = 0; i2 < 5; i2++)
     {
         std::cout << "for " << i2 << '\n';
@@ -80,10 +83,10 @@ int main(void)
     do
     {
         std::cout << "do-while " << i3 << '\n';
-        i3 = i3 + 1;
+        i3++;
     } while (i3 < 5);
 
     // TODO: Schreibe eine Schleife deiner Wahl, die den Benutzer so lang ganzzahlen eingeben lässt,
     //       bis eine ungerade negative Zahl eingegeben wird.
-    // Tipp: Benutze den Modulo-Operator (%)
+    // Tipp: Benutze den Modulo-Operator (%).
 }

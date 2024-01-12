@@ -1,12 +1,12 @@
 #include <iostream>
 
 // Es gibt in Klassen und Structs zwei spezielle Methoden: Den Constructor und den Destructor.
-//
+
 // Der Constructor ist die Methode, die IMMER aufgerufen wird, wenn man irgendwo ein neues Objekt erstellt.
 // Er sieht aus wie eine Methode ohne Rückgabetyp mit dem gleichen Namen wie die Klasse/ das Struct.
-//
+
 // Der Deconstructor ist die Methode, die IMMER aufgerufen wird, wenn ein Objekt zerstört wird (z.B. am Ende der Funktion in der es erstellt wird).
-// Er sieht gleich aus wei der Constructor, nur mit einem "~" davor.
+// Er sieht gleich aus wie der Constructor, nur mit einem "~" davor.
 
 struct Circle
 {
@@ -36,6 +36,7 @@ struct Rectangle
     float width;
     float height;
 
+    // Konstruktoren haben spezielle Syntax um Member zu initialisieren
     Rectangle(float newWidth, float newHeight)
         : width(newWidth), height(newHeight)
     {
@@ -51,7 +52,7 @@ int main(void)
     // So ruft man einen Constructor mit Argumenten auf:
     Rectangle r(3, 4);
 
-    // Rectangle* rPtr = new Rectangle(); // Geht auch nicht aus dem selben Grund!
+    // Rectangle* rPtr = new Rectangle(); // Geht auch nicht, aus dem selben Grund!
     // So benutzt man einen Constructor mit Argumenten bei Pointern:
     Rectangle *rPtr = new Rectangle(3, 4);
 

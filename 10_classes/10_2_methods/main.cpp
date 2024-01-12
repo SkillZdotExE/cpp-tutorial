@@ -1,9 +1,9 @@
 #include <iostream>
 
-// Klassen können nicht nur Variablen (Member) beinhalten, sondern auch Methoden (Funktionen)
-// Diese können auf ein Objekt der Klasse gleich wie Member mit dem . Operator aufgerufen werden.
+// Klassen können nicht nur Member beinhalten, sondern auch Methoden (Funktionen).
+// Diese können auf ein Objekt der Klasse (gleich wie Member) mit dem '.' Operator aufgerufen werden.
 
-// TODO: Erstelle eine Methode getArea für die Klasse Circle und benutze sie im main.
+// TODO: Füge der Klasse Circle eine Methode getArea hinzu und benutze sie im main.
 //  (Fläche = 3.14 * radius^2)
 
 class Circle

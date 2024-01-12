@@ -2,7 +2,7 @@
 
 #include "Circle.h"
 
-// In C++ gibt es zwei Arten von Files: Header und Source files.
+// In C++ gibt es zwei Arten von Dateien: Header und Source files.
 // In Header files (.h oder .hpp) steht kein Code, der ausgeführt wird, sondern nur die Struktur.
 // In Source files (.cpp) sind die Methoden der in Headern definierten Klassen und Funktionen implementiert.
 // Am besten schaust du dir dazu die Klasse Circle an, welche in Circle.h und Circle.cpp definiert ist. (Beginne mit dem Header)

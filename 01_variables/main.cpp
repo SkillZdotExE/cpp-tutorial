@@ -6,25 +6,26 @@ int main(void)
     // So weist man der Variable einen Wert zu:
     a = 2;
 
-    // Den Wert kann man auch direkt beim erstellen zuweisen:
-    int b = 5;
+    // Den Wert kann man auch direkt beim Erstellen zuweisen:
+    int b = 4;
 
     // Verschiedene Typen können verschieden Werte speichern:
     // Für Ganzzahlen verwendet man int (kurz für Integer), short, long oder long long
 
     int i = 1;
-    short s = 2;
-    long l = 3;
-    long long ll = 4;
+    short s = i * 2;
+    long l = i + s;
+    long long ll = l - 1;
 
     // Für Kommazahlen verwendet man float (floating point) oder double (double precision)
 
     float f = 2.5;
-    double d = 5.2;
+    double d = f / 2;
 
     // Für logische Werte (true oder false) verwendet man bool (Boolean)
 
     bool b = true;
+    bool e = !b; // Das '!' heißt "nicht" und invertiert einen bool (false wird true, true wird false)
 
     // Für Buchstaben verwendet man char
 
@@ -38,6 +39,9 @@ int main(void)
 
     // Ein "tab"
     char tab = '\t';
+
+    // Ein Anführunszechen
+    char quote = '\"';
 
     // Für ein einzelnes Backslash verwendet man '\\'
     char backslash = '\\';

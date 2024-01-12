@@ -1,7 +1,8 @@
 #include <iostream>
 
 // Es gehört zur "Good Practice", getter und setter zu verwenden.
-// Anstatt eine variable public zu machen, macht man sie private und implementiert
+// (Ausserdem: Winkler steht drauf und sie werden vom Qt-Framework verwendet.)
+// Anstatt eine Variable public zu machen, macht man sie private und implementiert
 //  eine get- und eine set-Funktion, über die man die Variable lesen und schreiben kann.
 // Private Variablen kennzeichnet man meist mit einem "_" am Anfang des namens.
 // Tipp: Winkler kennzeichnet alle Member mit "m_" am Anfang des Namens und kennzeichnet private Member garnicht.
@@ -23,8 +24,19 @@ public:
     }
 };
 
+// TODO: Schreibe die Klasse Person so um, dass name von aussen nicht einsehbar ist und
+//        Getter und Setter verwendet.
+//        Ändere auch ihre Verwendung im main dementsprechend.
+
+class Person
+{
+public:
+    std::string name;
+};
+
 int main(void)
 {
-    // TODO: Erstelle ein Circle-Objekt und setze seinen Radius auf 5.
-    //       Dann gib seinen radius über den Getter aus.
+    Person p;
+    p.name = "Max";
+    std::cout << "My name is " << p.name << "\n";
 }

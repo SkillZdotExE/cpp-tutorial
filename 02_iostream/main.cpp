@@ -1,5 +1,5 @@
-// Um Bibliotheken (Header) zu benutzen verwendet man ein #include-statement
-// In dieser Übung verwenden wir die C++ Standardbibliothek <iostream> für Ein- und Ausgabe von Daten.
+// Um Bibliotheken (Header) zu benutzen verwendet man ein #include-Statement.
+// In dieser Übung verwenden wir die C++ Standardbibliothek <iostream> für Ein- und Ausgabe in die Konsole.
 // Auch in jeder weiteren Übung wird diese Bibliothek verwendet.
 #include <iostream>
 
@@ -8,7 +8,7 @@ int main(void)
     // Alle Komponenten aus den C++-Standardbibliotheken befinden sich in einem sogenannten Namespace namens std.
     // Namespaces sind nur zur Organisation des Codes da.
     // Mit std::cout ("c - out") kann man Text in die Konsole schreiben.
-    // Wir schreiben hier den Text "Hello World" - mit einem \n (newline oder "enter") danach, um in die nächste Zeile zu hüpfen.
+    // Wir schreiben hier den Text "Hello World" - mit einem \n (newline oder "enter") danach, um in die nächste Zeile zu springen.
     std::cout << "Hello World!\n";
 
     // Mit std::cout kann man auch Variablen ausgeben:
@@ -32,7 +32,7 @@ int main(void)
 
     std::cout << "You entered " << l << '\n';
 
-    // TODO: Erstelle eine Variable double d, lese einen Wert aus std::cin ein.
+    // TODO: Erstelle eine Variable double d, lese einen Wert mit std::cin ein.
 
     // TODO: Multipliziere d mit 2 und gib das Ergebnis aus
 }

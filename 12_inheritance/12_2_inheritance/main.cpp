@@ -11,7 +11,7 @@
 
 // Hier ist ein Beispiel mit einem Fahrrad und einem Auto:
 
-// Das ist die Basisklasse. Sie soll alle Gemeinsamkeiten von Auto und Fahrrad darstellen, ein Fahrzeug eben.
+// Das ist hier die Basisklasse. Sie soll alle Gemeinsamkeiten von Auto und Fahrrad darstellen, ein Fahrzeug eben.
 //  Im nächsten Schritt werden wir das Auto und Fahrrad von Vehicle ableiten.
 //  Sie werden dann alle Member und Methoden von Vehicle haben.
 class Vehicle
@@ -19,7 +19,7 @@ class Vehicle
 public:
     float velocity;
 
-    // Methoden, die jede Unterklasse (Klassen, die von Vehicle ableiten) haben muss,
+    // Methoden, die jede Unterklasse (Klasse, die von Vehicle ableitet) haben muss,
     //  beginnen mit dem Keyword "virtual" und haben "= 0;" am Ende.
     // Solche Methoden nennt man PURE VIRTUAL.
     // Klassen mit pure virtual methoden nennt man ABSTRAKT. (dazu gleich mehr)
@@ -35,6 +35,7 @@ class Car : public Vehicle
     // float velocity;
 
     // Alle pure-virtual-Methoden der Basisklasse müssen implementiert werden.
+    // Dazu verwendet man "override"
     std::string getNoiseLevel() override
     {
         if (velocity == 0)
@@ -78,6 +79,9 @@ int main(void)
 
     // Man kann auch einen Container erstellen, der Vehicle* speichert:
     std::vector<Vehicle *> vehicles;
+
+    vehicles.push_back(&car);
+    vehicles.push_back(&bike);
 
     // TODO: Schreibe eine for-Schleife, die alle Geräuschlevel der Fahrzeug im std::vector
     //        so ausgibt:

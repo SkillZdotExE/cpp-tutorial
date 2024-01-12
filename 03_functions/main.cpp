@@ -11,7 +11,7 @@ void sayHi()
 
 // Diese Funktion heißt add.
 // Sie muss mit zwei Argumenten vom Typ int aufgerufen werden, z.B. "add(2,3)"
-// Da die Funktion einen int-Wert zurück gibt, kann sie wie eine Zahl im Code verwendet werden:
+// Da die Funktion einen int-Wert zurück gibt, kann sie wie eine Ganzzahl im Code verwendet werden:
 // "int sum = add(2,3);"
 int add(int a, int b)
 {

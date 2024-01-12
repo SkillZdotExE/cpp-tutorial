@@ -2,6 +2,8 @@
 
 // Das ist ein struct. Structs sind eigene Datentypen.
 // Dieses struct heißt Coordinate und hat die Member (variablen) x und y.
+// Später im Code können wir nun "Coorcinate coord" schreiben, genau wie wir "int i" schreiben können.
+// Eine Variable in einem struct nennt man MEMBER.
 struct Coordinate
 {
     int x;
@@ -32,4 +34,6 @@ int main(void)
 
     // TODO: Erstelle eine funktion printPet(Pet* p), die Namen und alter eines Pets in die Konsole schreibt.
     //       Rufe die Funktion hier auf das Pet p auf.
+
+    delete coordPtr;
 }

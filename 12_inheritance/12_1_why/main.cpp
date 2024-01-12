@@ -4,7 +4,8 @@
 //        Gib ihnen passende Member und Methoden.
 //        Beide sollen eine getArea()-Methode haben.
 
-// Jetzt kommt das Problem, wegen dem Vererbung nützlich ist:
+// Gleich wirst du das Problem sehen, wegen dem Vererbung nützlich ist:
+
 // TODO: Versuche, eine Funktion zu schreiben, die zwei der Formen anhand ihrer Fläche vergleicht.
 //        Sie soll Rectangle mit Rectangle, Circle mit Circle und Rectangle mit Circle vergleichen können.
 //        Sie soll true zurückgeben, wenn die Fläche der ersten Form größer ist, als die der Zweiten, sonst false.
