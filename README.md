@@ -20,7 +20,7 @@ Ich empfehle, die Extensions für C/C++ zu installieren. (In VS Code `strg + shi
 
 Öffne die PowerShell als Administrator und führe diesen Befehl aus:
 
-    set-executionpolicy remotesigned
+    set-executionpolicy remotesigned -Scope Process
 
 Wechsel in den heruntergeladenen Ordner mit `cd`:
 
